@@ -12,7 +12,8 @@ def main():
         text = args[0]
     upper = sum(1 for c in text if c.isupper())
     lower = sum(1 for c in text if c.islower())
-    punctuation = sum(1 for c in text if c in "!\"#$%&'()*+,-./:;<=>?@[\\]^_`{|}~")
+    punct = "!\"#$%&'()*+,-./:;<=>?@[\\]^_`{|}~"
+    punctuation = sum(1 for c in text if c in punct)
     spaces = sum(1 for c in text if c == ' ')
     digits = sum(1 for c in text if c.isdigit())
     print(f"The text contains {len(text)} characters:")
