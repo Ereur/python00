@@ -1,0 +1,7 @@
+# Markdown files
+*.md
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
